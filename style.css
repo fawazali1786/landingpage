@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    background-color:azure ;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -10,9 +11,83 @@
 }
 .banner{
     width: 100%;
-    height: 100vh;
-    background-image:url(Images/background.jpeg);
-    background-position: center;
-    background-size: cover;
+    height: 30vh;
 
 }
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    
+}
+
+.navbar ul li::after{
+content: '';
+height: 3px;
+width: 0;
+background: blue;
+position:absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    background-color: skyblue;
+    border: 10px solid;
+    margin: 40px;
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.content button {
+    background-color: blue;
+    cursor: pointer;
+    width: 200px;
+    padding: 10px ;
+    margin: 20px 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: blue;
+    border-color: black;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.content p{
+    background-color: skyblue;
+    margin: 10px;
+}
+
+.content h2{
+    background-color: skyblue;
+}
+
